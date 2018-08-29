@@ -12,6 +12,7 @@ build: build-o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-args src/test-args.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-next-line-num src/test-next-line-num.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-ls src/test-ls.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/avl-tree src/avl-tree.o
 
 clean:
 	find . -name '*.[od]' -print0 | xargs -0 -r rm -v
