@@ -16,6 +16,7 @@ build: build-o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-read-write src/test-read-write.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-getdents src/test-getdents.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-strsep src/test-strsep.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/test-va-list src/test-va-list.o
 
 clean:
 	find . -name '*.[od]' -print0 | xargs -0 -r rm -v
