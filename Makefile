@@ -1,4 +1,4 @@
-CFLAGS = -Wall -g -O0 -I. -I./include -I./gnulib/lib
+CFLAGS = -Wall -g -O0 -I. -I./include
 BUILD_DIR = ./build
 
 all: directories build
@@ -15,6 +15,7 @@ build: build-o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-stpcpy src/test-stpcpy.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-read-write src/test-read-write.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-getdents src/test-getdents.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/test-strsep src/test-strsep.o
 
 clean:
 	find . -name '*.[od]' -print0 | xargs -0 -r rm -v

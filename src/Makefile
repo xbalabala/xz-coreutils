@@ -1,4 +1,4 @@
-CFLAGS = -Wall -g -O0 -I. -I../include -I../gnulib/lib
+CFLAGS = -Wall -g -O0 -I. -I../include
 
 # https://stackoverflow.com/questions/22551167/using-a-result-of-shells-find-as-a-target-in-a-makefile
 sources = $(shell find . -maxdepth 1 -name '*.c')
