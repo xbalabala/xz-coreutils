@@ -69,9 +69,6 @@ simple_cat (
 int
 main () {
   char *inbuf;
-  /* Name of input file.  May be "-".  */
-  static char const *infile;
-  infile = "-";
   inbuf = malloc((size_t) 128 * 1024);
   simple_cat(inbuf, 128 * 1024);
 }
