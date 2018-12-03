@@ -1,3 +1,5 @@
+// https://docs.oracle.com/cd/E19253-01/816-4855/termsub15-14/index.html
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
