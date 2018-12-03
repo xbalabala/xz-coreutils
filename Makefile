@@ -20,6 +20,8 @@ build: build-o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-stat src/test-stat.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-static src/test-static.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-tty src/test-tty.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/test-pty-master src/test-pty-master.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/test-pty-slave src/test-pty-slave.o
 
 clean:
 	find . -name '*.[od]' -print0 | xargs -0 -r rm -v
