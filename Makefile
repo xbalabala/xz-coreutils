@@ -18,6 +18,8 @@ build: build-o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-strsep src/test-strsep.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-va-list src/test-va-list.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-stat src/test-stat.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/test-static src/test-static.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/test-tty src/test-tty.o
 
 clean:
 	find . -name '*.[od]' -print0 | xargs -0 -r rm -v
