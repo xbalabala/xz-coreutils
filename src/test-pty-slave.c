@@ -6,7 +6,8 @@
 #include <unistd.h>
 #include <termios.h>
 
-int main(int argc, char* argv[])
+int
+main(int argc, char* argv[])
 {
   int fd = open("/dev/pts/8", O_RDWR | O_NOCTTY);
   if(fd < 0)
@@ -47,4 +48,5 @@ int main(int argc, char* argv[])
   }
 
   close(fd);
+  return 0;
 }

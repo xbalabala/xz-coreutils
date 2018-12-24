@@ -22,6 +22,11 @@ build: build-o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-tty src/test-tty.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-pty-master src/test-pty-master.o
 	gcc $(CFLAGS) -o $(BUILD_DIR)/test-pty-slave src/test-pty-slave.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/test-pty-stdio src/test-pty-stdio.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/ttyecho src/ttyecho.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/mypty src/mypty.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/mypty2 src/mypty2.o
+	gcc $(CFLAGS) -o $(BUILD_DIR)/mypty3 src/mypty3.o
 
 clean:
 	find . -name '*.[od]' -print0 | xargs -0 -r rm -v
